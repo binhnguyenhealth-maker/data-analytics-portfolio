@@ -35,7 +35,8 @@ The public repository may contain:
 
 - source code, tests, documentation, and validation records;
 - one packaged Tableau workbook under each `projects/*/tableau/` directory;
-- one native Tableau preview under each `projects/*/images/` directory; and
+- one source-backed presentation preview under each `projects/*/images/`
+  directory; and
 - deterministic inclusion evidence under `validation/`.
 
 Any additional native analytics file, archive, generated binary, production

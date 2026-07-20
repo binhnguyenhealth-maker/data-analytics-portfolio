@@ -5,4 +5,5 @@
 # run the tests. This file exists so that future analytical extensions (e.g.,
 # a scikit-learn reference model) can pin a known-good dependency set.
 #
-# The current release has no third-party Python runtime dependency.
+# Pillow renders the deterministic source-backed repository previews.
+Pillow==12.2.0

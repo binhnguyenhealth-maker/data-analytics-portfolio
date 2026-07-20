@@ -2,7 +2,7 @@
 
 **SYNTHETIC DATA / INDEPENDENT PORTFOLIO PROJECT**
 
-![Dashboard preview](images/dashboard-preview.jpeg)
+![Source-backed presentation preview](images/dashboard-preview.jpeg)
 
 [Download the packaged Tableau workbook](tableau/Urban_Mobility_Gap_Diagnostic_SYNTHETIC_PORTFOLIO.twbx)
 
