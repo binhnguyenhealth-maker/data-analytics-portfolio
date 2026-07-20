@@ -1,0 +1,8 @@
+# Runtime dependencies for the synthetic-data portfolio.
+#
+# The synthetic generators and validation framework use the Python 3 standard
+# library only. No third-party packages are required to regenerate the data or
+# run the tests. This file exists so that future analytical extensions (e.g.,
+# a scikit-learn reference model) can pin a known-good dependency set.
+#
+# The current release has no third-party Python runtime dependency.
