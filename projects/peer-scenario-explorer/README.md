@@ -2,7 +2,7 @@
 
 **SYNTHETIC DATA / INDEPENDENT PORTFOLIO PROJECT**
 
-![Dashboard preview](images/dashboard-preview.jpeg)
+![Source-backed presentation preview](images/dashboard-preview.jpeg)
 
 [Download the packaged Tableau workbook](tableau/Peer_Scenario_Stability_Explorer_SYNTHETIC_PORTFOLIO.twbx)
 

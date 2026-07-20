@@ -141,7 +141,7 @@ class TestTableauRelease(unittest.TestCase):
                     for embedded, source in spec["embedded"].items():
                         self.assertEqual(archive.read(embedded), (ROOT / source).read_bytes())
 
-    def test_previews_are_native_sized_jpegs(self):
+    def test_previews_are_release_sized_jpegs(self):
         for project, spec in PROJECTS.items():
             with self.subTest(project=project):
                 preview = ROOT / spec["preview"]

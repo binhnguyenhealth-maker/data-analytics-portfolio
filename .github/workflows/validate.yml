@@ -23,3 +23,5 @@ jobs:
         run: python shared/validation/regenerate_all.py
       - name: Run analytical and release tests
         run: python shared/validation/run_all_tests.py
+      - name: Build source-backed previews (portability smoke)
+        run: python shared/validation/build_previews.py

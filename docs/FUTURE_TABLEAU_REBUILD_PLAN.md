@@ -1,4 +1,8 @@
-# FUTURE_TABLEAU_REBUILD_PLAN.md
+# Archived Tableau Build Contract
+
+This filename is retained so older links do not break. The builds described
+below are complete. Start with the current
+[Tableau workbook review guide](TABLEAU_WORKBOOK_REVIEW_GUIDE.md).
 
 **SYNTHETIC DATA / INDEPENDENT PORTFOLIO PROJECT**
 

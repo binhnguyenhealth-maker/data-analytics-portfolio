@@ -3,9 +3,9 @@
 **Verdict:** `PASS_PUBLIC_REPOSITORY_PUBLISHED`
 
 - Independent verification by: Codex
-- Verification date: 2026-07-19 (America/New_York)
+- Verification date: 2026-07-20 (America/New_York)
 - Release surface: source, tests, documentation, three packaged Tableau
-  workbooks, and three native Tableau previews
+  workbooks, and three source-backed presentation previews
 - External state at this checkpoint: public repository published and pinned at
   `https://github.com/binhnguyenhealth-maker/data-analytics-portfolio`
 
@@ -26,6 +26,11 @@ Latest result: **169 tests passed, 0 failed**.
 The same suite is configured for every GitHub push and pull request and can be
 run manually from the repository's Actions page.
 
+CI verifies the checked-in preview bytes and release manifest before running a
+separate preview-generation portability smoke. The smoke may use an available
+platform font; it is not allowed to redefine the exact checked-in release
+images or their manifest entries.
+
 The suite includes:
 
 - 128 project-level analytical and mutation tests;
@@ -36,14 +41,16 @@ The suite includes:
   canonical counterpart;
 - fixed 1366 x 768 dashboard checks;
 - exact worksheet and dashboard inventories;
-- native-preview format and dimension checks; and
+- presentation-preview format and dimension checks; and
 - negative cases for private-path and real-entity contamination.
 
 ## Tableau evidence
 
 All three workbooks were opened, rendered, saved, closed, and freshly reopened
 in Tableau Desktop 2026.2 Free Edition before promotion into this release
-payload.
+payload. The repository landing-page images are clean presentation views
+generated from the same embedded synthetic tables; they are not represented as
+native screenshots.
 
 | Project | Native readback | Packaged workbook |
 |---|---|---|
@@ -72,8 +79,8 @@ ran and is not described as query-performance evidence.
   deliverables.
 - Hosted Tableau administration, row-level security, production refresh,
   training, and measured business outcomes are outside the demonstrated scope.
-- The native previews show Tableau Desktop authoring state; they are evidence
-  captures, not hosted interactive views.
+- The previews are static presentation views; download the packaged workbooks
+  to inspect the native Tableau implementation and controls.
 
 ## Manifest
 

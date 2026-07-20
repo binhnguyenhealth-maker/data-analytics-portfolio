@@ -2,10 +2,12 @@
 
 [![Validation](https://github.com/binhnguyenhealth-maker/data-analytics-portfolio/actions/workflows/validate.yml/badge.svg)](https://github.com/binhnguyenhealth-maker/data-analytics-portfolio/actions/workflows/validate.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
-[![Tableau](https://img.shields.io/badge/Tableau-2026.2-E97627.svg)](docs/FUTURE_TABLEAU_REBUILD_PLAN.md)
+[![Tableau](https://img.shields.io/badge/Tableau-2026.2-E97627.svg)](docs/TABLEAU_WORKBOOK_REVIEW_GUIDE.md)
 
-Three reproducible analytics case studies built with deterministic synthetic
-data, fail-closed validation, and downloadable Tableau workbooks.
+Three decision-focused Tableau case studies showing how I turn messy inputs
+into a governed refresh queue, a transparent diagnostic, and an explainable
+peer comparison. Each project includes a downloadable workbook, a clean
+presentation preview, reproducible synthetic data, and tests.
 
 > **SYNTHETIC DATA / INDEPENDENT PORTFOLIO PROJECT**
 > These are independent prototypes, not client-commissioned work or evidence
@@ -20,6 +22,10 @@ data, fail-closed validation, and downloadable Tableau workbooks.
 | [Peer Scenario Explorer](projects/peer-scenario-explorer/) | Which five fictional peers match a focal city, why, and how stable is the set? | scenario parameters, explainable distance allocation, stability testing | [Download workbook](projects/peer-scenario-explorer/tableau/Peer_Scenario_Stability_Explorer_SYNTHETIC_PORTFOLIO.twbx) |
 
 ## Dashboard previews
+
+These clean presentation views are generated from the same synthetic tables
+embedded in the packaged workbooks. Open the linked workbook to inspect the
+native Tableau implementation and controls.
 
 ### 1. Data Quality Command Center
 
@@ -38,6 +44,7 @@ data, fail-closed validation, and downloadable Tableau workbooks.
 ```sh
 python3 -m pip install -r requirements.txt
 python3 shared/validation/regenerate_all.py
+python3 shared/validation/build_previews.py
 python3 shared/validation/run_all_tests.py
 ```
 
@@ -53,7 +60,7 @@ projects/<case-study>/
   src/          deterministic generator and validator
   tests/        positive and mutation-based negative cases
   tableau/      downloadable packaged workbook
-  images/       native Tableau preview
+  images/       source-backed presentation preview
 shared/
   synthetic/    fictional entity pools and seeded primitives
   validation/   aggregate, disclosure, structure, and package gates
@@ -70,6 +77,15 @@ validation/     current release record and inclusion manifest
   and robustness; and
 - honest boundaries around synthetic data, deployment, and business outcomes.
 
+## Why the public editions are smaller
+
+These public workbooks are disclosure-safe synthetic editions, not copies of
+the private application prototypes. Their smaller cohorts keep the repository
+fast to clone, easy to inspect, and fully reproducible while preserving the
+same decision logic, Tableau interaction patterns, data contracts, and failure
+checks. The exact public grains are 27 inventory rows and 6 queue issues, 24
+fictional mobility cities, and 30 fictional peer-analysis cities.
+
 ## Important limitations
 
 - All people, places, organizations, identifiers, and values are fictional.
@@ -82,6 +98,9 @@ See [SOURCE_AND_USAGE_POLICY.md](SOURCE_AND_USAGE_POLICY.md),
 [docs/DISCLOSURE_MATRIX.md](docs/DISCLOSURE_MATRIX.md), and
 [validation/VALIDATION.md](validation/VALIDATION.md) for the exact evidence
 boundary.
+
+For a five-minute review path, see the
+[Tableau workbook review guide](docs/TABLEAU_WORKBOOK_REVIEW_GUIDE.md).
 
 ## License
 
