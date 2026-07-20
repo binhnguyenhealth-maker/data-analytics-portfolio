@@ -26,6 +26,11 @@ Latest result: **169 tests passed, 0 failed**.
 The same suite is configured for every GitHub push and pull request and can be
 run manually from the repository's Actions page.
 
+CI verifies the checked-in preview bytes and release manifest before running a
+separate preview-generation portability smoke. The smoke may use an available
+platform font; it is not allowed to redefine the exact checked-in release
+images or their manifest entries.
+
 The suite includes:
 
 - 128 project-level analytical and mutation tests;

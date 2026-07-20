@@ -10,7 +10,7 @@ Total tracked files: **54**
 | Path | Size (bytes) | SHA-256 |
 |---|---:|---|
 | `.gitattributes` | 47 | `6df7f02c098fdc8a6a09f51a30f28fb604c4b12f78ef338d910053b3aaa5f9ef` |
-| `.github/workflows/validate.yml` | 692 | `48f624451009cc65f2032f72d33d7c4d2e97c650f2cfb69d9bab6aa901c0209c` |
+| `.github/workflows/validate.yml` | 712 | `f90d61d45d14de465f771286db84ca40e8503daf851a30f879e43bbdd04f25bf` |
 | `.gitignore` | 699 | `27165fa1fd8078f2103a07fdd6520b42b78e3c75f12dec69c36246ff41e20a2c` |
 | `LICENSE` | 11357 | `58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd` |
 | `NOTICE` | 245 | `986ffeb75b0582f129cc6f0934b980e977c346e67a27cb9d413ee595235cfbea` |
@@ -61,5 +61,5 @@ Total tracked files: **54**
 | `shared/validation/test_disclosure_scan.py` | 10102 | `38a552b3a0562890a398928b1c3cf32bdb63c106b8c41bfdb701dd569ebfabb3` |
 | `shared/validation/test_structure_scan.py` | 10973 | `59a864c2fe54cab3bc1876235dc24b9e13fd36e9a58e053c22c29970025bb7cc` |
 | `shared/validation/test_tableau_release.py` | 7554 | `8920a1152567de7fbe27d66dbeacf85dd901fae0e0a09ce483e6017541a97366` |
-| `validation/VALIDATION.md` | 3884 | `3fb89b09fa0aabebed42969e77b6e60358eea022953428f50cc33184dad53df4` |
+| `validation/VALIDATION.md` | 4150 | `8a3f9178d0fd070449991c04e92d74fe01a06ca56652a51c5caa326610b5f4fa` |
 | `validation/history/GLM52_STAGING_VALIDATION_2026-07-17.md` | 13725 | `3f9b53c5ccc7302d624f745b0f380e2ccd45b3b034eae4420f3cef1b06a8166a` |
