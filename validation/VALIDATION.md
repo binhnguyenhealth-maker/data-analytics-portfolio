@@ -1,12 +1,13 @@
 # Public Portfolio Release Validation
 
-**Verdict:** `PASS_PUBLIC_REPOSITORY_PAYLOAD`
+**Verdict:** `PASS_PUBLIC_REPOSITORY_PUBLISHED`
 
 - Independent verification by: Codex
 - Verification date: 2026-07-19 (America/New_York)
 - Release surface: source, tests, documentation, three packaged Tableau
   workbooks, and three native Tableau previews
-- External state at this checkpoint: repository publication pending
+- External state at this checkpoint: public repository published and pinned at
+  `https://github.com/binhnguyenhealth-maker/data-analytics-portfolio`
 
 The original GLM 5.2 staging validation is preserved unchanged at
 `validation/history/GLM52_STAGING_VALIDATION_2026-07-17.md` with its original
@@ -21,6 +22,9 @@ PYTHONDONTWRITEBYTECODE=1 python3 -B shared/validation/run_all_tests.py
 ```
 
 Latest result: **169 tests passed, 0 failed**.
+
+The same suite is configured for every GitHub push and pull request and can be
+run manually from the repository's Actions page.
 
 The suite includes:
 
